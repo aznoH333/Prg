@@ -11,14 +11,21 @@ public class VovoceaYelenina {
         System.out.println("Zadej pocet zeleniny :");
         int bruh = Integer.parseInt(sc.nextLine());
         for (int n = 0; n < bruh; n++) {
-            zelen.add(sc.nextLine());
+            String temp = sc.nextLine();
+            if (zelen.indexOf(temp) < 0)
+                zelen.add(temp);
+            else {System.out.println("debilku");n--;};
         }
         System.out.println("Zadej pocet ovoce :");
         int bruh2 = Integer.parseInt(sc.nextLine());
         for (int n = 0; n < bruh2; n++) {
-            ovoc.add(sc.nextLine());
+            String temp = sc.nextLine();
+            if (ovoc.indexOf(temp) < 0)
+                ovoc.add(temp);
+            else {System.out.println("debilku");n--;};
         }
 
+        System.out.println("napis end kdyz pogrom");
         while (true){
             System.out.println("Zadej vec:");
             String input = sc.nextLine();
@@ -28,6 +35,14 @@ public class VovoceaYelenina {
                 else if (ovoc.indexOf(input) > -1) System.out.println("Orvoce");
                 else System.out.println("Nen9 neexistuje");
             }
+        }
+        System.out.println("list jelninu");
+        for (String z: zelen) {
+            System.out.println(z);
+        }
+        System.out.println("list toho druhyhy");
+        for (String z: ovoc) {
+            System.out.println(z);
         }
     }
 }
