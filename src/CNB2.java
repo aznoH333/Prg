@@ -38,7 +38,8 @@ public class CNB2 {
                 "Thajsko|baht|100|THB|64,855\n" +
                 "Turecko|lira|1|TRY|2,467\n" +
                 "USA|dolar|1|USD|21,819\n" +
-                "Velká Británie|libra|1|GBP|29,552\n").split("\n");
+                "Velká Británie|libra|1|GBP|29,552\n" +
+                "Ceska republika|Koruna|1|CZK|1\n").split("\n");
 
         // process input
         HashMap<String, Double> processedInput = new HashMap<>();
